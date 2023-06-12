@@ -1,0 +1,61 @@
+.work {
+  padding-bottom: 333px;
+  background-image: url(../img/work-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+
+
+  @include small-tablet {
+    background-size: 578px 387px;
+    background-position: top 170px right -115px;
+    padding-bottom: 240px;
+  }
+
+
+  @include mobile {
+    background-size: 413px 275px;
+    background-position: top 60px left 30px;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 24px;
+    max-width: 400px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--light-color);
+
+    @include small-tablet {
+      font-size: 20px;
+    }
+
+    &:nth-child(2) {
+      padding-top: 30px;
+      @include mobile {
+        padding-top: 230px;
+      }
+
+    }
+
+
+    &:nth-child(3) {
+      margin-bottom: 180px;
+
+      @include small-tablet {
+        margin-bottom: 100px;
+      }
+    }
+  }
+
+  &__mark {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #5B5B5B;
+
+    @include small-tablet {
+      font-size: 20px;
+    }
+  }
+}

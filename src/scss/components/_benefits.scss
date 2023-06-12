@@ -1,0 +1,77 @@
+.benefits {
+  background-color: var(--light-color);
+  padding: 70px 0;
+  margin-bottom: 30px;
+
+  &__item {
+    position: relative;
+    padding: 34px 64px 34px 68px;
+    border-color: #000;
+    border: 2px solid;
+
+
+    @include small-tablet {}
+
+    @include mobile {
+      padding: 34px 34px 34px 24px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+      padding-right: 70px;
+
+      @include mobile {
+        padding-right: 30px;
+      }
+    }
+
+
+
+    &:hover {
+      background-color: #000;
+      transition: all 0.3s ease-in-out;
+
+      .benefits__btn {
+        background-image: url(../img/arrow-right-active.svg);
+
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #AEAEAE;
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #505050;
+
+    @include small-tablet {
+      font-size: 16px;
+    }
+
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    padding-right: 43px;
+    right: 0;
+    top: 62px;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/arrow-right-dark.svg);
+    background-repeat: no-repeat;
+  }
+}

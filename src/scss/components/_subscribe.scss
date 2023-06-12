@@ -1,0 +1,127 @@
+.subscribe {
+  margin-bottom: 100px;
+
+  &__content {
+    display: flex;
+
+    @include small-tablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 75px;
+      align-items: center;
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__item {
+
+
+    &:not(:last-child) {
+      margin-right: 30px;
+
+      @include small-tablet {
+        margin: 0;
+      }
+    }
+  }
+
+  &__inner {
+    position: relative;
+    background-image: url(../img/subscribe-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 280px;
+    height: 500px;
+    margin: 0;
+    margin-bottom: 53px;
+    padding-bottom: 55px;
+
+    @include small-tablet {
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 55px;
+    padding-top: 50px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--light-color);
+
+  }
+
+  &__price {
+    position: relative;
+    margin: 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--main-color);
+
+
+    &--discount {
+      margin: 0;
+      margin-top: -24px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      text-decoration-line: line-through;
+      color: #595959;
+    }
+
+  }
+
+  &__time {
+    padding-bottom: 22px;
+    margin: 0;
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #666666;
+
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 75px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #B3B3B3;
+    mix-blend-mode: normal;
+  }
+
+  &__btn {
+    position: absolute;
+    bottom: 82px;
+    left: 40px;
+    padding: 0px 55px;
+
+    &--first {
+      padding: 0px 17px;
+      left: 50px;
+    }
+  }
+
+  &__descr {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #989898;
+  }
+}

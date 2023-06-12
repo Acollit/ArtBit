@@ -1,0 +1,126 @@
+.account {
+  &__login {
+    display: flex;
+    margin-bottom: 60px;
+
+  }
+
+  &__img {
+    margin-right: 20px;
+  }
+
+  &__name {
+    position: relative;
+    margin: 0;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--light-color);
+
+  }
+
+  &__date {
+    position: absolute;
+    bottom: -8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #484848;
+
+    &--left {
+      left: 0;
+      bottom: -24px;
+    }
+
+    &--right {
+      right: 0;
+      bottom: -24px;
+    }
+  }
+
+  &__subscribe {
+    position: relative;
+    margin-bottom: 67px;
+    max-width: 682px;
+  }
+
+  &__subscribe-box {
+    position: relative;
+    background-color: #101014;
+    padding: 27px 44px;
+    max-width: 682px;
+    width: 100%;
+    border: 2px solid;
+    border-color: #8F8F8F;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #484848;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      left: 18px;
+      background-image: url(../img/eclipse.svg);
+    }
+  }
+
+  &__subscribe-active {
+    position: absolute;
+    right: 24px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #63E2B7;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #484848;
+  }
+
+  &__messangers {
+    margin-bottom: 77px;
+  }
+
+  &__messangers-text {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: #FFFFFF;
+  }
+
+  &__logout {
+    position: relative;
+    margin-bottom: 230px;
+    padding-left: 39px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #8F8F8F;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 32px;
+      height: 30px;
+
+      background-image: url(../img/logout.svg);
+      background-repeat: no-repeat;
+
+
+    }
+  }
+}

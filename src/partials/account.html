@@ -1,0 +1,66 @@
+<section class="account">
+  <div class="container">
+    <div class="account__login">
+      <picture>
+        <source srcset="img/account.avif" type="image/avif">
+        <source srcset="img/account.webp" type="image/webp">
+        <img loading="lazy" src="img/account.png" class="image account__img" width="" height="" alt="">
+      </picture>
+      <p class="account__name">
+        My-super-login
+        <span class="account__date">
+          от 01.01.2023
+        </span>
+      </p>
+    </div>
+    <div class="account__subscribe">
+
+      <div class="account__subscribe-box">
+        Акивные подписки
+        <span class="account__subscribe-active">
+          8BIT
+        </span>
+      </div>
+      <span class="account__date account__date--left">
+        От 01.01.2023
+      </span>
+      <span class="account__date account__date--right">
+        До 02.01.2024
+      </span>
+    </div>
+    <form action="#" class="form account__form">
+      <label class="form__label">
+        <input type="password" name="пароль" class="input-reset form__input" placeholder="Старый пароль">
+      </label>
+      <label class="form__label">
+        <input type="password" name="пароль" class="input-reset form__input" placeholder="Новый пароль">
+      </label>
+      <label class="form__label">
+        <input id="passwordd" type="password" name="пароль" class="input-reset form__input"
+          placeholder="Новый пароль еще раз">
+      </label>
+      <div class="form__btns">
+        <button id="btn" type="button" class="btn-reset btn btn--disabel form__btn">Сохранить</button>
+        <sapn class="form__saved">
+          Сохранено
+        </sapn>
+      </div>
+
+
+    </form>
+    <div class="account__messangers">
+      <h3 class="account__title">
+        Мои мессенджеры
+      </h3>
+      <p class="account__messangers-text">
+        Нет привязанных мессенджеров, <span class="developers__link">привязать</span>
+      </p>
+    </div>
+
+    <button class="btn-reset account__logout">
+      Выйти из аккаунта
+    </button>
+
+
+  </div>
+</section>
