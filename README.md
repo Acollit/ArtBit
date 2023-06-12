@@ -33,5 +33,5 @@
 
 ## Author
 
-- github - 
+- github - [@Xareks](https://github.com/Xareks)
 - Frontend Mentor - [@Xareks](https://www.frontendmentor.io/profile/Xareks)
