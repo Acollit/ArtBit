@@ -20,7 +20,7 @@ Users should be able to:
 
 ![](../screenshot.png)
 
-<img src="screenshot.png" width=70% >
+<img src="screenshot.png" width=10% >
 
 
 ### Links
